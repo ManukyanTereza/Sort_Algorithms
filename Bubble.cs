@@ -21,7 +21,7 @@ namespace Sort
                 for (int j = 0; j < n - i - 1; j++)
                     if (Inputarray[j] > Inputarray[j + 1])
                     {
-                        int temp=inputarray[j];
+                        int temp=Inputarray[j];
                         Inputarray[j] = Inputarray[j + 1];
                         Inputarray[j + 1] = temp;
                         
