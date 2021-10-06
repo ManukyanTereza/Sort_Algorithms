@@ -16,14 +16,15 @@ namespace Sort
 
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
-            int temp = 0;
             int n = Inputarray.Length;
             for (int i = 0; i < n - 1; i++)
                 for (int j = 0; j < n - i - 1; j++)
                     if (Inputarray[j] > Inputarray[j + 1])
                     {
+                        int temp=inputarray[j];
                         Inputarray[j] = Inputarray[j + 1];
                         Inputarray[j + 1] = temp;
+                        
                     }
 
             stopWatch.Stop();
